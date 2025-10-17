@@ -36,11 +36,7 @@ def format_file_size(size_bytes, precision=2, use_binary=True):
     
     # TODO: Students implement the conversion algorithm
     # This involves loops, mathematical operations, and formatting
-    size = size_bytes
-    unit_index = 0
-    while size >= divisor and unit_index < len(units) - 1:
-        size /= divisor
-        unit_index += 1
+    
     
     formatted_size = f"{size:.{precision}f} {units[unit_index]}"
     return formatted_size
